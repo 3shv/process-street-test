@@ -1,5 +1,5 @@
 {
-  "name": "Test",
+  "name": "test",
   "version": "0.1.0",
   "description": "A sample file upload directive using blueimp",
   "main": "server.js",
@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "bower": "^1.7.9"
+  },
+  "engines": {
+    "node": "4.2.2"
   }
 }
