@@ -1,13 +1,18 @@
-<div>
-<input id="fileupload" type="file" name="files[]" 
+<form>
+<div class="form-group">
+<label class="btn btn-default btn-file">Browse
+<input type="file" name="files[]" id="fileupload" style="display: none;"
     multiple
     data-sequential-uploads="true"
     data-form-data='{"script": "true"}'>
-<span>
-    Uploaded %: {{ overallProgress }}
-</span>
-<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-<div class="wistia_embed wistia_async_abcde12345" style="height:366px;width:600px">&nbsp;
+ </label>
 </div>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="{{overallProgress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{overallProgress}}%">
+      <span class="sr-only">{{overallProgress}}% Complete</span>
+    </div>
+  </div>
 
+<div class="form-group" id="embed_video">
 </div>
+</form>

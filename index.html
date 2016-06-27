@@ -10,8 +10,6 @@
 <script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
 <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!-- blueimp Gallery script -->
-<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
 <script src="/assets/vendors/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
 <!-- The basic File Upload plugin -->
@@ -26,14 +24,17 @@
 <script src="/assets/vendors/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
 <!-- The File Upload validation plugin -->
 <script src="/assets/vendors/blueimp-file-upload/js/jquery.fileupload-validate.js"></script>
-<!-- The File Upload Angular JS module -->
-<script src="/assets/vendors/blueimp-file-upload/js/jquery.fileupload-angular.js"></script>
 <!-- The main application script -->
 <script src="/assets/js/app.js"></script>
 <script src="/assets/js/app.config.js"></script>
 <script src="/assets/js/app.directives.js"></script>
+<script src="//fast.wistia.com/embed/medias/q9b39ckg3q.jsonp" async></script>
+<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 </head>
 <body ng-app="app">
-    <upload-widget></upload-widget>
+    <div class="container">
+    <h2>Upload widget</h2>
+    <upload-widget id="fileupload"></upload-widget>
+    </div>
 </body>
 </html>
