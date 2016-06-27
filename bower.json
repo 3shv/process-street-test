@@ -1,0 +1,8 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "angularjs#^1.5.7",
+    "blueimp-file-upload": "fileupload#^9.12.5"
+  }
+}
